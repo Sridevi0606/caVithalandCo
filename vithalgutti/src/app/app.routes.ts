@@ -1,26 +1,16 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes } from '@angular/router';
+import { Home } from './pages/home/home';
+import { About } from './pages/about/about';
+import { Services } from './pages/services/services';
+import { Team } from './pages/team/team';
+import { Contact } from './pages/contact/contact';
 
+export const routes: Routes = [
+  { path: '', component: Home },
+  { path: 'about', component: About },
+  { path: 'services', component: Services },
+  { path: 'team', component: Team },
+  { path: 'contact', component: Contact },
 
-import { HomeComponent } from './pages/home/home.component';
-import { AboutComponent } from './pages/about/about.component';
-import { ServicesComponent } from './pages/services/services.component';
-import { TeamComponent } from './pages/team/team.component';
-import { ContactComponent } from './pages/contact/contact.component';
- 
-const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'services', component: ServicesComponent },
-  { path: 'team', component: TeamComponent },
-  { path: 'contact', component: ContactComponent },
-
-  // fallback
   { path: '**', redirectTo: '' }
 ];
-
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule {}
