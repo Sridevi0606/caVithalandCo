@@ -1,0 +1,11 @@
+.about {
+  padding: 60px;
+  text-align: center;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
