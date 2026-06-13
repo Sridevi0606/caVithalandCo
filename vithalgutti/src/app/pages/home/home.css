@@ -1,30 +1,57 @@
 .hero {
-  background: #1e293b;
-  color: white;
-  padding: 100px;
-  text-align: center;
+  background: #E8F5E9;
+  padding: 120px 20px;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+/* TITLE */
+.hero h1 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #2E7D32;
+}
+
+/* TEXT */
+.hero p {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #6B7280;
+  line-height: 1.6;
+}
+
+/* BUTTONS */
+.buttons {
+  margin-top: 30px;
 }
 
 .btn {
-  background: #38bdf8;
-  padding: 10px 20px;
-  color: black;
+  padding: 12px 22px;
+  border-radius: 6px;
   text-decoration: none;
+  margin-right: 10px;
+  font-weight: 500;
 }
 
-.services-preview {
-  padding: 50px;
-  text-align: center;
+.primary {
+  background: #4CAF50;
+  color: white;
 }
 
-.grid {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
+.outline {
+  border: 1px solid #4CAF50;
+  color: #4CAF50;
 }
 
-.card {
-  padding: 20px;
-  background: #f1f5f9;
-  border-radius: 8px;
+/* MOBILE */
+@media (max-width: 768px) {
+  .hero {
+    padding: 80px 20px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
 }

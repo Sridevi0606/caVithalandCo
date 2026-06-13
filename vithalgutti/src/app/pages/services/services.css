@@ -1,11 +1,7 @@
 .services {
-  padding: 60px;
-  text-align: center;
+  background: #E8F5E9;
 }
 
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+.services h1 {
+  color: #2E7D32;
 }
